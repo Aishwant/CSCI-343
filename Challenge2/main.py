@@ -31,8 +31,8 @@ def addToListY(listY):
 	for key,value in listY.items(): y = y + value				
 	return y
 
-userInput = input("Files To Choose From: \n Republicans: r08, r12, r16 \n Democratic: d08, d12, d16 \n \t You want to choose---> ")
-#userInput = raw_input("Files To Choose From: \n Republicans: r08, r12, r16 \n Democratic: d08, d12, d16 \n \t You want to choose---> ")  --python 2.7
+#userInput = input("Files To Choose From: \n Republicans: r08, r12, r16 \n Democratic: d08, d12, d16 \n \t You want to choose---> ")
+userInput = raw_input("Files To Choose From: \n Republicans: r08, r12, r16 \n Democratic: d08, d12, d16 \n \t You want to choose---> ")  
 print (userInput)
 dataR = fileReader(userInput+".txt")
 addToDict(dataR)
